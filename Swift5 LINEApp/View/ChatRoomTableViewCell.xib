@@ -8,34 +8,47 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" rowHeight="60" id="gIC-ue-zH4" customClass="ChatRoomTableViewCell" customModule="Swift5_LINEApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="416" height="60"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" rowHeight="95" id="gIC-ue-zH4" customClass="ChatRoomTableViewCell" customModule="Swift5_LINEApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="95"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gIC-ue-zH4" id="3Yo-Nr-kXK">
-                <rect key="frame" x="0.0" y="0.0" width="416" height="60"/>
+                <rect key="frame" x="0.0" y="0.0" width="391" height="95"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GG1-Rn-6pu">
-                        <rect key="frame" x="20" y="-1" width="45" height="45"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GG1-Rn-6pu">
+                        <rect key="frame" x="15" y="17.5" width="60" height="60"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="jOh-61-rmp"/>
+                            <constraint firstAttribute="width" secondItem="GG1-Rn-6pu" secondAttribute="height" multiplier="1:1" id="tEB-VD-Xg8"/>
+                        </constraints>
                     </imageView>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" editable="NO" text="メッセージが表示されます。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLB-JV-Qgp">
-                        <rect key="frame" x="85" y="9" width="240" height="25"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="メッセージが表示されます。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLB-JV-Qgp">
+                        <rect key="frame" x="85" y="25" width="250" height="45"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="bUE-CA-EzK"/>
+                        </constraints>
                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="日時" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqj-3G-Ajl">
-                        <rect key="frame" x="333" y="4" width="66" height="34"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日時" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqj-3G-Ajl">
+                        <rect key="frame" x="340" y="39.5" width="35" height="20.5"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="GG1-Rn-6pu" firstAttribute="centerY" secondItem="3Yo-Nr-kXK" secondAttribute="centerY" id="3iD-pM-Wb5"/>
+                    <constraint firstItem="bLB-JV-Qgp" firstAttribute="top" secondItem="3Yo-Nr-kXK" secondAttribute="top" constant="25" id="5vd-U4-0nU"/>
+                    <constraint firstItem="GG1-Rn-6pu" firstAttribute="leading" secondItem="3Yo-Nr-kXK" secondAttribute="leading" constant="15" id="PYM-hS-dsQ"/>
+                    <constraint firstItem="bLB-JV-Qgp" firstAttribute="bottom" secondItem="fqj-3G-Ajl" secondAttribute="bottom" constant="10" id="dNC-pn-wfJ"/>
+                    <constraint firstAttribute="bottom" secondItem="bLB-JV-Qgp" secondAttribute="bottom" constant="25" id="hRF-Rz-tAV"/>
+                    <constraint firstItem="bLB-JV-Qgp" firstAttribute="leading" secondItem="GG1-Rn-6pu" secondAttribute="trailing" constant="10" id="uC6-73-XQl"/>
+                    <constraint firstItem="fqj-3G-Ajl" firstAttribute="leading" secondItem="bLB-JV-Qgp" secondAttribute="trailing" constant="5" id="w9H-40-tTz"/>
+                </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
@@ -43,7 +56,7 @@
                 <outlet property="messageTextView" destination="bLB-JV-Qgp" id="NM0-uu-3WI"/>
                 <outlet property="userImageView" destination="GG1-Rn-6pu" id="t4P-5s-vnR"/>
             </connections>
-            <point key="canvasLocation" x="1055.072463768116" y="-91.071428571428569"/>
+            <point key="canvasLocation" x="1255.7971014492755" y="-89.397321428571431"/>
         </tableViewCell>
     </objects>
 </document>
