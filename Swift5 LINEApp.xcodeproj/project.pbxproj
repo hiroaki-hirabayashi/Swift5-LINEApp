@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		E77B7334248A885100ACD71C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B7333248A885100ACD71C /* AppDelegate.swift */; };
 		E77B7336248A885100ACD71C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B7335248A885100ACD71C /* SceneDelegate.swift */; };
-		E77B7338248A885100ACD71C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B7337248A885100ACD71C /* ViewController.swift */; };
 		E77B733B248A885100ACD71C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77B7339248A885100ACD71C /* Main.storyboard */; };
 		E77B733D248A885700ACD71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77B733C248A885700ACD71C /* Assets.xcassets */; };
 		E77B7340248A885700ACD71C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77B733E248A885700ACD71C /* LaunchScreen.storyboard */; };
 		E77B734B248A885700ACD71C /* Swift5_LINEAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B734A248A885700ACD71C /* Swift5_LINEAppTests.swift */; };
 		E77B7356248A885800ACD71C /* Swift5_LINEAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B7355248A885800ACD71C /* Swift5_LINEAppUITests.swift */; };
+		E77B7364248A8A3100ACD71C /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B7363248A8A3100ACD71C /* ChatListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		E77B7330248A885100ACD71C /* Swift5 LINEApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift5 LINEApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77B7333248A885100ACD71C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E77B7335248A885100ACD71C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E77B7337248A885100ACD71C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E77B733A248A885100ACD71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E77B733C248A885700ACD71C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E77B733F248A885700ACD71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		E77B7351248A885800ACD71C /* Swift5 LINEAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift5 LINEAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77B7355248A885800ACD71C /* Swift5_LINEAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift5_LINEAppUITests.swift; sourceTree = "<group>"; };
 		E77B7357248A885800ACD71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E77B7363248A8A3100ACD71C /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 			children = (
 				E77B7333248A885100ACD71C /* AppDelegate.swift */,
 				E77B7335248A885100ACD71C /* SceneDelegate.swift */,
-				E77B7337248A885100ACD71C /* ViewController.swift */,
+				E77B7363248A8A3100ACD71C /* ChatListViewController.swift */,
 				E77B7339248A885100ACD71C /* Main.storyboard */,
 				E77B733C248A885700ACD71C /* Assets.xcassets */,
 				E77B733E248A885700ACD71C /* LaunchScreen.storyboard */,
@@ -259,8 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E77B7338248A885100ACD71C /* ViewController.swift in Sources */,
 				E77B7334248A885100ACD71C /* AppDelegate.swift in Sources */,
+				E77B7364248A8A3100ACD71C /* ChatListViewController.swift in Sources */,
 				E77B7336248A885100ACD71C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
