@@ -25,10 +25,10 @@ class ChatListViewController: UIViewController, UITableViewDelegate, UITableView
         
         //ナビゲーションバーの色をオリジナルに変更(UIColorExtension.swift),タイトルの文字色を白くする
         navigationController?.navigationBar.barTintColor = .rgb(red: 39, green: 49, blue: 69)
-//        navigationItem.title = "トーク"
+        navigationItem.title = "トーク"
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         //ここまで
-        
+    
         
     }
     
@@ -48,6 +48,15 @@ class ChatListViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = chatListTableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
         return cell
+    }
+    
+    //タップされた時の処理
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let chatRoomViewController = storyboard!.instantiateViewController(withIdentifier: "ChatRoomViewController")
+        navigationController?.pushViewController(chatRoomViewController, animated: true)
+        
+        
     }
     
     

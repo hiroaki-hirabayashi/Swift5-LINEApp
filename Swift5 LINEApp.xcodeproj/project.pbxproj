@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E73727E0248BDADF001C4E5D /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73727DF248BDADF001C4E5D /* ChatRoomViewController.swift */; };
 		E77B7334248A885100ACD71C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B7333248A885100ACD71C /* AppDelegate.swift */; };
 		E77B7336248A885100ACD71C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B7335248A885100ACD71C /* SceneDelegate.swift */; };
 		E77B733B248A885100ACD71C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77B7339248A885100ACD71C /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		E77B734B248A885700ACD71C /* Swift5_LINEAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B734A248A885700ACD71C /* Swift5_LINEAppTests.swift */; };
 		E77B7356248A885800ACD71C /* Swift5_LINEAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B7355248A885800ACD71C /* Swift5_LINEAppUITests.swift */; };
 		E77B7364248A8A3100ACD71C /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B7363248A8A3100ACD71C /* ChatListViewController.swift */; };
+		E7BE198A248C167200E0DD10 /* ChatRoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7BE1989248C167200E0DD10 /* ChatRoomTableViewCell.xib */; };
+		E7BE198C248C17F500E0DD10 /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BE198B248C17F500E0DD10 /* ChatRoomTableViewCell.swift */; };
 		E7E96E44248B3C96001E54AC /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E96E43248B3C96001E54AC /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E73727DF248BDADF001C4E5D /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		E77B7330248A885100ACD71C /* Swift5 LINEApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift5 LINEApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77B7333248A885100ACD71C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E77B7335248A885100ACD71C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,8 @@
 		E77B7355248A885800ACD71C /* Swift5_LINEAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift5_LINEAppUITests.swift; sourceTree = "<group>"; };
 		E77B7357248A885800ACD71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E77B7363248A8A3100ACD71C /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		E7BE1989248C167200E0DD10 /* ChatRoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRoomTableViewCell.xib; sourceTree = "<group>"; };
+		E7BE198B248C17F500E0DD10 /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
 		E7E96E43248B3C96001E54AC /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +90,7 @@
 				E77B7333248A885100ACD71C /* AppDelegate.swift */,
 				E77B7335248A885100ACD71C /* SceneDelegate.swift */,
 				E77B7363248A8A3100ACD71C /* ChatListViewController.swift */,
+				E73727DF248BDADF001C4E5D /* ChatRoomViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -94,6 +101,7 @@
 				E77B7339248A885100ACD71C /* Main.storyboard */,
 				E77B733C248A885700ACD71C /* Assets.xcassets */,
 				E77B733E248A885700ACD71C /* LaunchScreen.storyboard */,
+				E7BE1989248C167200E0DD10 /* ChatRoomTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -132,6 +140,7 @@
 				E7085A0F248B399F0044FC2B /* View */,
 				E7085A0E248B39890044FC2B /* Controller */,
 				E7E96E43248B3C96001E54AC /* UIColorExtension.swift */,
+				E7BE198B248C17F500E0DD10 /* ChatRoomTableViewCell.swift */,
 				E77B7341248A885700ACD71C /* Info.plist */,
 			);
 			path = "Swift5 LINEApp";
@@ -261,6 +270,7 @@
 			files = (
 				E77B7340248A885700ACD71C /* LaunchScreen.storyboard in Resources */,
 				E77B733D248A885700ACD71C /* Assets.xcassets in Resources */,
+				E7BE198A248C167200E0DD10 /* ChatRoomTableViewCell.xib in Resources */,
 				E77B733B248A885100ACD71C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +298,9 @@
 			files = (
 				E77B7334248A885100ACD71C /* AppDelegate.swift in Sources */,
 				E77B7364248A8A3100ACD71C /* ChatListViewController.swift in Sources */,
+				E73727E0248BDADF001C4E5D /* ChatRoomViewController.swift in Sources */,
 				E77B7336248A885100ACD71C /* SceneDelegate.swift in Sources */,
+				E7BE198C248C17F500E0DD10 /* ChatRoomTableViewCell.swift in Sources */,
 				E7E96E44248B3C96001E54AC /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
