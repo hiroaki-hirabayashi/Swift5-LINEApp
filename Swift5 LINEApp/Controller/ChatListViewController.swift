@@ -23,6 +23,13 @@ class ChatListViewController: UIViewController, UITableViewDelegate, UITableView
         chatListTableView.delegate = self
         chatListTableView.dataSource = self
         
+        //ナビゲーションバーの色をオリジナルに変更(UIColorExtension.swift),タイトルの文字色を白くする
+        navigationController?.navigationBar.barTintColor = .rgb(red: 39, green: 49, blue: 69)
+//        navigationItem.title = "トーク"
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        //ここまで
+        
+        
     }
     
     //     セルの高さを設定

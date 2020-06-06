@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
-        <!--Chat List View Controller-->
+        <!--トーク-->
         <scene sceneID="bun-Gh-vKb">
             <objects>
                 <viewController storyboardIdentifier="ChatListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qrp-2R-VjL" customClass="ChatListViewController" customModule="Swift5_LINEApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -86,7 +86,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="GIO-DI-cpY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vWe-q1-uIU"/>
+                    <navigationItem key="navigationItem" title="トーク" id="vWe-q1-uIU"/>
                     <connections>
                         <outlet property="chatListTableView" destination="W0K-JB-LsA" id="LaE-lB-4f0"/>
                     </connections>

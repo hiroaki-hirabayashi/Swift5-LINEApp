@@ -15,6 +15,7 @@
 		E77B734B248A885700ACD71C /* Swift5_LINEAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B734A248A885700ACD71C /* Swift5_LINEAppTests.swift */; };
 		E77B7356248A885800ACD71C /* Swift5_LINEAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B7355248A885800ACD71C /* Swift5_LINEAppUITests.swift */; };
 		E77B7364248A8A3100ACD71C /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B7363248A8A3100ACD71C /* ChatListViewController.swift */; };
+		E7E96E44248B3C96001E54AC /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E96E43248B3C96001E54AC /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E77B7355248A885800ACD71C /* Swift5_LINEAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift5_LINEAppUITests.swift; sourceTree = "<group>"; };
 		E77B7357248A885800ACD71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E77B7363248A8A3100ACD71C /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		E7E96E43248B3C96001E54AC /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E7085A0E248B39890044FC2B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E77B7333248A885100ACD71C /* AppDelegate.swift */,
+				E77B7335248A885100ACD71C /* SceneDelegate.swift */,
+				E77B7363248A8A3100ACD71C /* ChatListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E7085A0F248B399F0044FC2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E77B7339248A885100ACD71C /* Main.storyboard */,
+				E77B733C248A885700ACD71C /* Assets.xcassets */,
+				E77B733E248A885700ACD71C /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7085A10248B39AF0044FC2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E77B7327248A885000ACD71C = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +128,10 @@
 		E77B7332248A885100ACD71C /* Swift5 LINEApp */ = {
 			isa = PBXGroup;
 			children = (
-				E77B7333248A885100ACD71C /* AppDelegate.swift */,
-				E77B7335248A885100ACD71C /* SceneDelegate.swift */,
-				E77B7363248A8A3100ACD71C /* ChatListViewController.swift */,
-				E77B7339248A885100ACD71C /* Main.storyboard */,
-				E77B733C248A885700ACD71C /* Assets.xcassets */,
-				E77B733E248A885700ACD71C /* LaunchScreen.storyboard */,
+				E7085A10248B39AF0044FC2B /* Model */,
+				E7085A0F248B399F0044FC2B /* View */,
+				E7085A0E248B39890044FC2B /* Controller */,
+				E7E96E43248B3C96001E54AC /* UIColorExtension.swift */,
 				E77B7341248A885700ACD71C /* Info.plist */,
 			);
 			path = "Swift5 LINEApp";
@@ -262,6 +289,7 @@
 				E77B7334248A885100ACD71C /* AppDelegate.swift in Sources */,
 				E77B7364248A8A3100ACD71C /* ChatListViewController.swift in Sources */,
 				E77B7336248A885100ACD71C /* SceneDelegate.swift in Sources */,
+				E7E96E44248B3C96001E54AC /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
