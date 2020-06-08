@@ -18,6 +18,8 @@
 		E77B7364248A8A3100ACD71C /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B7363248A8A3100ACD71C /* ChatListViewController.swift */; };
 		E7BE198A248C167200E0DD10 /* ChatRoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7BE1989248C167200E0DD10 /* ChatRoomTableViewCell.xib */; };
 		E7BE198C248C17F500E0DD10 /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BE198B248C17F500E0DD10 /* ChatRoomTableViewCell.swift */; };
+		E7C26F20248C36FE007A4B00 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C26F1F248C36FE007A4B00 /* ChatInputAccessoryView.xib */; };
+		E7C26F22248C88A9007A4B00 /* ChatInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C26F21248C88A9007A4B00 /* ChatInputAccessoryView.swift */; };
 		E7E96E44248B3C96001E54AC /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E96E43248B3C96001E54AC /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		E77B7363248A8A3100ACD71C /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
 		E7BE1989248C167200E0DD10 /* ChatRoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRoomTableViewCell.xib; sourceTree = "<group>"; };
 		E7BE198B248C17F500E0DD10 /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
+		E7C26F1F248C36FE007A4B00 /* ChatInputAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatInputAccessoryView.xib; sourceTree = "<group>"; };
+		E7C26F21248C88A9007A4B00 /* ChatInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputAccessoryView.swift; sourceTree = "<group>"; };
 		E7E96E43248B3C96001E54AC /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +105,6 @@
 				E77B7339248A885100ACD71C /* Main.storyboard */,
 				E77B733C248A885700ACD71C /* Assets.xcassets */,
 				E77B733E248A885700ACD71C /* LaunchScreen.storyboard */,
-				E7BE1989248C167200E0DD10 /* ChatRoomTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,11 +139,12 @@
 		E77B7332248A885100ACD71C /* Swift5 LINEApp */ = {
 			isa = PBXGroup;
 			children = (
+				E7C26F1E248C363B007A4B00 /* Cell */,
+				E7C26F1D248C35EA007A4B00 /* Xib */,
+				E7C26F1C248C3588007A4B00 /* Extension */,
 				E7085A10248B39AF0044FC2B /* Model */,
 				E7085A0F248B399F0044FC2B /* View */,
 				E7085A0E248B39890044FC2B /* Controller */,
-				E7E96E43248B3C96001E54AC /* UIColorExtension.swift */,
-				E7BE198B248C17F500E0DD10 /* ChatRoomTableViewCell.swift */,
 				E77B7341248A885700ACD71C /* Info.plist */,
 			);
 			path = "Swift5 LINEApp";
@@ -162,6 +166,32 @@
 				E77B7357248A885800ACD71C /* Info.plist */,
 			);
 			path = "Swift5 LINEAppUITests";
+			sourceTree = "<group>";
+		};
+		E7C26F1C248C3588007A4B00 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E7E96E43248B3C96001E54AC /* UIColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E7C26F1D248C35EA007A4B00 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				E7BE1989248C167200E0DD10 /* ChatRoomTableViewCell.xib */,
+				E7C26F1F248C36FE007A4B00 /* ChatInputAccessoryView.xib */,
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		E7C26F1E248C363B007A4B00 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E7BE198B248C17F500E0DD10 /* ChatRoomTableViewCell.swift */,
+				E7C26F21248C88A9007A4B00 /* ChatInputAccessoryView.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +301,7 @@
 				E77B7340248A885700ACD71C /* LaunchScreen.storyboard in Resources */,
 				E77B733D248A885700ACD71C /* Assets.xcassets in Resources */,
 				E7BE198A248C167200E0DD10 /* ChatRoomTableViewCell.xib in Resources */,
+				E7C26F20248C36FE007A4B00 /* ChatInputAccessoryView.xib in Resources */,
 				E77B733B248A885100ACD71C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E77B7334248A885100ACD71C /* AppDelegate.swift in Sources */,
+				E7C26F22248C88A9007A4B00 /* ChatInputAccessoryView.swift in Sources */,
 				E77B7364248A8A3100ACD71C /* ChatListViewController.swift in Sources */,
 				E73727E0248BDADF001C4E5D /* ChatRoomViewController.swift in Sources */,
 				E77B7336248A885100ACD71C /* SceneDelegate.swift in Sources */,
