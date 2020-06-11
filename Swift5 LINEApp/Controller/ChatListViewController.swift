@@ -30,7 +30,7 @@ class ChatListViewController: UIViewController, UITableViewDelegate, UITableView
         //ここまで
         
         
-        let storyboard = UIStoryboard(name: "Signup", bundle: nil)
+        let storyboard = UIStoryboard(name: "SignUp", bundle: nil)
         let signupViewController = storyboard.instantiateViewController(withIdentifier: "SignupViewController")
         self.present(signupViewController, animated: true, completion: nil)
         

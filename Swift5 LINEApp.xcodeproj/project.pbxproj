@@ -25,7 +25,7 @@
 		E7C26F20248C36FE007A4B00 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C26F1F248C36FE007A4B00 /* ChatInputAccessoryView.xib */; };
 		E7C26F22248C88A9007A4B00 /* ChatInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C26F21248C88A9007A4B00 /* ChatInputAccessoryView.swift */; };
 		E7E5F14E2491D1BF00FCC04D /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E5F14D2491D1BF00FCC04D /* SignupViewController.swift */; };
-		E7E5F1502492600800FCC04D /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7E5F14F2492600800FCC04D /* Signup.storyboard */; };
+		E7E5F1502492600800FCC04D /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7E5F14F2492600800FCC04D /* SignUp.storyboard */; };
 		E7E96E44248B3C96001E54AC /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E96E43248B3C96001E54AC /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +77,7 @@
 		E7C26F1F248C36FE007A4B00 /* ChatInputAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatInputAccessoryView.xib; sourceTree = "<group>"; };
 		E7C26F21248C88A9007A4B00 /* ChatInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputAccessoryView.swift; sourceTree = "<group>"; };
 		E7E5F14D2491D1BF00FCC04D /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		E7E5F14F2492600800FCC04D /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		E7E5F14F2492600800FCC04D /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		E7E96E43248B3C96001E54AC /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,7 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				E77B7339248A885100ACD71C /* Main.storyboard */,
-				E7E5F14F2492600800FCC04D /* Signup.storyboard */,
+				E7E5F14F2492600800FCC04D /* SignUp.storyboard */,
 				E77B733C248A885700ACD71C /* Assets.xcassets */,
 				E77B733E248A885700ACD71C /* LaunchScreen.storyboard */,
 			);
@@ -353,7 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E77B7340248A885700ACD71C /* LaunchScreen.storyboard in Resources */,
-				E7E5F1502492600800FCC04D /* Signup.storyboard in Resources */,
+				E7E5F1502492600800FCC04D /* SignUp.storyboard in Resources */,
 				E77B733D248A885700ACD71C /* Assets.xcassets in Resources */,
 				E7BE198A248C167200E0DD10 /* ChatRoomTableViewCell.xib in Resources */,
 				E7C26F20248C36FE007A4B00 /* ChatInputAccessoryView.xib in Resources */,
