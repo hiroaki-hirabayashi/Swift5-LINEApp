@@ -18,17 +18,17 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="qrp-2R-VjL" kind="relationship" relationship="rootViewController" id="MUH-5h-Bex"/>
+                        <segue destination="qrp-2R-VjL" kind="relationship" relationship="rootViewController" id="WtL-kE-fXS"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="njj-AE-Tun" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+            <point key="canvasLocation" x="519" y="126"/>
         </scene>
         <!--Chat List View Controller-->
         <scene sceneID="bun-Gh-vKb">
             <objects>
-                <viewController storyboardIdentifier="ChatListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qrp-2R-VjL" customClass="ChatListViewController" customModule="Swift5_LINEApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatListViewController" id="qrp-2R-VjL" customClass="ChatListViewController" customModule="Swift5_LINEApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Suv-9e-jNc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hdf-Kk-gSw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900.00000000000011" y="125.89285714285714"/>
+            <point key="canvasLocation" x="1272" y="126"/>
         </scene>
         <!--Chat Room View Controller-->
         <scene sceneID="edF-XN-HHg">
@@ -120,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6x4-8n-1GK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1623.1884057971015" y="126.5625"/>
+            <point key="canvasLocation" x="1999" y="126"/>
         </scene>
     </scenes>
 </document>

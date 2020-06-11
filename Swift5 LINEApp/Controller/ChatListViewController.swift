@@ -28,8 +28,15 @@ class ChatListViewController: UIViewController, UITableViewDelegate, UITableView
         navigationItem.title = "トーク"
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         //ここまで
-    
         
+        
+        let storyboard = UIStoryboard(name: "Signup", bundle: nil)
+        let signupViewController = storyboard.instantiateViewController(withIdentifier: "SignupViewController")
+        self.present(signupViewController, animated: true, completion: nil)
+        
+//        let storyboard = UIStoryboard(name: "Signup", bundle: nil)
+//        let nextVC = storyboard.instantiateViewController(withIdentifier: "SignupViewController")
+//        navigationController?.pushViewController(nextVC, animated: true)
     }
     
     //     セルの高さを設定
