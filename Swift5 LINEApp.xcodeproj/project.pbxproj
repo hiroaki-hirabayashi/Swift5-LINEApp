@@ -10,6 +10,7 @@
 		0B8E7CFD91804AD37489B384 /* Pods_Swift5_LINEApp_Swift5_LINEAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C989E9ED99E4F91CAAF2D811 /* Pods_Swift5_LINEApp_Swift5_LINEAppUITests.framework */; };
 		53B5E9B7C0A70A2B633414E3 /* Pods_Swift5_LINEApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96214322875BD0FA3B00D75D /* Pods_Swift5_LINEApp.framework */; };
 		6673032D46610CF1641BAF91 /* Pods_Swift5_LINEAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F5F0D8724D3E94223D0D9F /* Pods_Swift5_LINEAppTests.framework */; };
+		E729DEDE2493516100F24587 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E729DEDD2493516100F24587 /* User.swift */; };
 		E73727E0248BDADF001C4E5D /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73727DF248BDADF001C4E5D /* ChatRoomViewController.swift */; };
 		E77B7334248A885100ACD71C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B7333248A885100ACD71C /* AppDelegate.swift */; };
 		E77B7336248A885100ACD71C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B7335248A885100ACD71C /* SceneDelegate.swift */; };
@@ -19,9 +20,9 @@
 		E77B734B248A885700ACD71C /* Swift5_LINEAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B734A248A885700ACD71C /* Swift5_LINEAppTests.swift */; };
 		E77B7356248A885800ACD71C /* Swift5_LINEAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B7355248A885800ACD71C /* Swift5_LINEAppUITests.swift */; };
 		E77B7364248A8A3100ACD71C /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B7363248A8A3100ACD71C /* ChatListViewController.swift */; };
+		E79D3B462493182B002BFAC7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E79D3B452493182B002BFAC7 /* GoogleService-Info.plist */; };
 		E7BE198A248C167200E0DD10 /* ChatRoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7BE1989248C167200E0DD10 /* ChatRoomTableViewCell.xib */; };
 		E7BE198C248C17F500E0DD10 /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BE198B248C17F500E0DD10 /* ChatRoomTableViewCell.swift */; };
-		E7C0379B2491C44E008AF132 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7C0379A2491C44D008AF132 /* GoogleService-Info.plist */; };
 		E7C26F20248C36FE007A4B00 /* ChatInputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C26F1F248C36FE007A4B00 /* ChatInputAccessoryView.xib */; };
 		E7C26F22248C88A9007A4B00 /* ChatInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C26F21248C88A9007A4B00 /* ChatInputAccessoryView.swift */; };
 		E7E5F14E2491D1BF00FCC04D /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E5F14D2491D1BF00FCC04D /* SignupViewController.swift */; };
@@ -56,6 +57,7 @@
 		C3B4F7135E47EF0DA33F0DC4 /* Pods-Swift5 LINEAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift5 LINEAppTests.debug.xcconfig"; path = "Target Support Files/Pods-Swift5 LINEAppTests/Pods-Swift5 LINEAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C989E9ED99E4F91CAAF2D811 /* Pods_Swift5_LINEApp_Swift5_LINEAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift5_LINEApp_Swift5_LINEAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C263C4748B718E82D4DB12 /* Pods-Swift5 LINEApp-Swift5 LINEAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift5 LINEApp-Swift5 LINEAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Swift5 LINEApp-Swift5 LINEAppUITests/Pods-Swift5 LINEApp-Swift5 LINEAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E729DEDD2493516100F24587 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E73727DF248BDADF001C4E5D /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
 		E77B7330248A885100ACD71C /* Swift5 LINEApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift5 LINEApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77B7333248A885100ACD71C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,9 +73,9 @@
 		E77B7355248A885800ACD71C /* Swift5_LINEAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift5_LINEAppUITests.swift; sourceTree = "<group>"; };
 		E77B7357248A885800ACD71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E77B7363248A8A3100ACD71C /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		E79D3B452493182B002BFAC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E7BE1989248C167200E0DD10 /* ChatRoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRoomTableViewCell.xib; sourceTree = "<group>"; };
 		E7BE198B248C17F500E0DD10 /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
-		E7C0379A2491C44D008AF132 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E7C26F1F248C36FE007A4B00 /* ChatInputAccessoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatInputAccessoryView.xib; sourceTree = "<group>"; };
 		E7C26F21248C88A9007A4B00 /* ChatInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputAccessoryView.swift; sourceTree = "<group>"; };
 		E7E5F14D2491D1BF00FCC04D /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		E7085A10248B39AF0044FC2B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E729DEDD2493516100F24587 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,7 +197,7 @@
 				E7085A0F248B399F0044FC2B /* View */,
 				E7085A0E248B39890044FC2B /* Controller */,
 				E77B7341248A885700ACD71C /* Info.plist */,
-				E7C0379A2491C44D008AF132 /* GoogleService-Info.plist */,
+				E79D3B452493182B002BFAC7 /* GoogleService-Info.plist */,
 			);
 			path = "Swift5 LINEApp";
 			sourceTree = "<group>";
@@ -357,8 +360,8 @@
 				E77B733D248A885700ACD71C /* Assets.xcassets in Resources */,
 				E7BE198A248C167200E0DD10 /* ChatRoomTableViewCell.xib in Resources */,
 				E7C26F20248C36FE007A4B00 /* ChatInputAccessoryView.xib in Resources */,
+				E79D3B462493182B002BFAC7 /* GoogleService-Info.plist in Resources */,
 				E77B733B248A885100ACD71C /* Main.storyboard in Resources */,
-				E7C0379B2491C44E008AF132 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +494,7 @@
 				E7E5F14E2491D1BF00FCC04D /* SignupViewController.swift in Sources */,
 				E77B7364248A8A3100ACD71C /* ChatListViewController.swift in Sources */,
 				E73727E0248BDADF001C4E5D /* ChatRoomViewController.swift in Sources */,
+				E729DEDE2493516100F24587 /* User.swift in Sources */,
 				E77B7336248A885100ACD71C /* SceneDelegate.swift in Sources */,
 				E7BE198C248C17F500E0DD10 /* ChatRoomTableViewCell.swift in Sources */,
 				E7E96E44248B3C96001E54AC /* UIColorExtension.swift in Sources */,

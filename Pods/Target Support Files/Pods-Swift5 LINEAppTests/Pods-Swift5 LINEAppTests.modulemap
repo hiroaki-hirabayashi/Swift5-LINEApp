@@ -1,0 +1,6 @@
+framework module Pods_Swift5_LINEAppTests {
+  umbrella header "Pods-Swift5 LINEAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

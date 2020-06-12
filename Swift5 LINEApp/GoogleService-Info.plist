@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>72865221077-prg1iucvds83p92j1n470qvun7qmobkh.apps.googleusercontent.com</string>
+	<string>400254376909-rdoehak8a9uei3n39hfskld7td9h5kbi.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.72865221077-prg1iucvds83p92j1n470qvun7qmobkh</string>
+	<string>com.googleusercontent.apps.400254376909-rdoehak8a9uei3n39hfskld7td9h5kbi</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDmhmeoMR0PRky6mpsW9ebVPeqA5gLMT5k</string>
+	<string>AIzaSyDuPsD3e9NoViwHNC7CvLwCT9lsfQ5Hhv0</string>
 	<key>GCM_SENDER_ID</key>
-	<string>72865221077</string>
+	<string>400254376909</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.-Hiroaki-Hirabayashi.Swift5-LINEApp</string>
 	<key>PROJECT_ID</key>
-	<string>swift5-lineapp</string>
+	<string>swift5-lineapp-57073</string>
 	<key>STORAGE_BUCKET</key>
-	<string>swift5-lineapp.appspot.com</string>
+	<string>swift5-lineapp-57073.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:72865221077:ios:78ec6a09fe49bd4773555c</string>
+	<string>1:400254376909:ios:cd5eaa402b807c7efc0284</string>
 	<key>DATABASE_URL</key>
-	<string>https://swift5-lineapp.firebaseio.com</string>
+	<string>https://swift5-lineapp-57073.firebaseio.com</string>
 </dict>
 </plist>
