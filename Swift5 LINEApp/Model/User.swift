@@ -2,9 +2,10 @@
 //  User.swift
 //  Swift5 LINEApp
 //
-//  Created by 平林宏淳 on 2020/06/12.
+//  Created by 平林宏淳 on 2020/06/14.
 //  Copyright © 2020 Hiroaki_Hirabayashi. All rights reserved.
 //
+
 
 import Foundation
 import Firebase

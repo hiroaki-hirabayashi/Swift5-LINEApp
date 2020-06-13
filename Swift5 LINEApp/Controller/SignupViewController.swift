@@ -11,6 +11,7 @@ import Firebase
 import FirebaseFirestore
 import FirebaseAuth
 
+//ログイン画面
 class SignupViewController: UIViewController {
 
     //プロフィール画像

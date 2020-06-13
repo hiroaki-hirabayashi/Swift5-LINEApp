@@ -23,7 +23,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="njj-AE-Tun" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="519" y="126"/>
+            <point key="canvasLocation" x="472" y="126"/>
         </scene>
         <!--Chat List View Controller-->
         <scene sceneID="bun-Gh-vKb">
@@ -94,7 +94,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hdf-Kk-gSw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1272" y="126"/>
+            <point key="canvasLocation" x="1241" y="126"/>
         </scene>
         <!--Chat Room View Controller-->
         <scene sceneID="edF-XN-HHg">
