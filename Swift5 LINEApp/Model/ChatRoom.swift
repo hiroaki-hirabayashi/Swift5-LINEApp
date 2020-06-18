@@ -1,29 +1,25 @@
 //
-//  User.swift
+//  ChatRoom.swift
 //  Swift5 LINEApp
 //
 //  Created by 平林宏淳 on 2020/06/14.
 //  Copyright © 2020 Hiroaki_Hirabayashi. All rights reserved.
 //
 
-
 import Foundation
 import Firebase
 
-class User {
+class ChatRoom {
     
-    let email: String
-    let username: String
+    let latestMessageId: String
+    let memebers: [String]
     let createdAt: Timestamp
-    let profileImageUrl: String
     
-    var uid: String?
+    var partnerUser: User?
     
     init(dic: [String: Any]) {
-        self.email = dic["email"] as? String ?? ""
-        self.username = dic["username"] as? String ?? ""
+        self.latestMessageId = dic["latestMessageId"] as? String ?? ""
+        self.memebers = dic["memebers"] as? [String] ?? [String]()
         self.createdAt = dic["createdAt"] as? Timestamp ?? Timestamp()
-        self.profileImageUrl = dic["profileImageUrl"] as? String ?? ""
     }
-    
 }

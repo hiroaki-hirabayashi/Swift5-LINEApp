@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseFirestore
+import FirebaseAuth
 import Nuke
 
 //新規チャット開始画面
@@ -16,23 +17,55 @@ class UserListViewController: UIViewController {
     
     let cellId = "cellId"
     var users = [User]()
+    var selectedUser: User?
+    
+    
+    @IBAction func goBack(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     @IBOutlet weak var userListTableView: UITableView!
-    @IBOutlet weak var chatStartButton: UIButton!
+    //新規会話開始ボタン
+    @IBOutlet weak var startChatButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         userListTableView.delegate = self
         userListTableView.dataSource = self
-        chatStartButton.layer.cornerRadius = 15
+        startChatButton.layer.cornerRadius = 15
+        startChatButton.isEnabled = false
+        startChatButton.addTarget(self, action: #selector(tappedStartChatButton), for: .touchUpInside)
         navigationController?.navigationBar.tintColor = .rgb(red: 39, green: 49, blue: 69)
         
         fetchUserInfoFromFirestore()
     }
     
+    @objc func tappedStartChatButton() {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        guard let partnerUid = self.selectedUser?.uid else { return }
+        
+        let memebers = [uid, partnerUid]
+        
+        let docData = [
+            "memebers": memebers,
+            "latestMessageId": "",
+            "createdAt": Timestamp()
+            ] as [String : Any]
+        
+        Firestore.firestore().collection("chatRooms").addDocument(data: docData) { (err) in
+            if let err = err {
+                print("ChatRoom情報の保存に失敗しました。\(err)")
+                return
+            }
+            self.dismiss(animated: true, completion: nil)
+            print("ChatRoom情報の保存に成功しました。")
+        }
+    }
+    
     //Firestoreからユーザー情報を取得
     func fetchUserInfoFromFirestore() {
-        
+        //すべてのユーザー情報を取得
         Firestore.firestore().collection("users").getDocuments { (snapShots, err) in
             if let err = err {
                 print("user情報の取得に失敗しました。\(err)")
@@ -42,8 +75,10 @@ class UserListViewController: UIViewController {
             snapShots?.documents.forEach({ (snapShot) in
                 let dic = snapShot.data()
                 let user = User.init(dic: dic)
+                user.uid = snapShot.documentID
                 
-                //ログイン済みのユーザーはListに載せない
+                //ログイン済みのユーザーは表示しない(ログインしているユーザーは載せない)
+                //上のuidとは別
                 guard let uid = Auth.auth().currentUser?.uid else { return }
                 if uid == snapShot.documentID {
                     return
@@ -72,12 +107,19 @@ extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    //セルを押したユーザーを認識する
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        startChatButton.isEnabled = true
+        let user = users[indexPath.row]
+        self.selectedUser = user
+    }
+    
     
     
     
 }
 
-//ユーザー選択画面のセル
+//新規チャット開始画面のセル
 class UserListTableViewCell: UITableViewCell {
     
     @IBOutlet weak var userImageView: UIImageView!
@@ -89,7 +131,6 @@ class UserListTableViewCell: UITableViewCell {
             if let url = URL(string: user?.profileImageUrl ?? "") {
                 Nuke.loadImage(with: url, into: userImageView)
             }
-            
         }
     }
     

@@ -60,6 +60,11 @@
                         <viewLayoutGuide key="safeArea" id="ict-6h-e6f"/>
                     </view>
                     <navigationItem key="navigationItem" id="25t-r4-cvH">
+                        <barButtonItem key="leftBarButtonItem" title="閉じる" id="nlY-aZ-6Rg">
+                            <connections>
+                                <action selector="goBack:" destination="9Fd-Gl-5BG" id="8Ag-zj-z1j"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="orC-pZ-mZ9">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="91r-3b-a8c">
                                 <rect key="frame" x="302" y="6" width="92" height="32"/>
@@ -73,13 +78,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="chatStartButton" destination="91r-3b-a8c" id="TIS-Xa-bKL"/>
+                        <outlet property="startChatButton" destination="91r-3b-a8c" id="3tB-Ye-1bY"/>
                         <outlet property="userListTableView" destination="ujl-Yz-EgD" id="6fQ-rc-L9f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mI3-Zj-X6f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="449" y="104"/>
+            <point key="canvasLocation" x="447.82608695652175" y="103.79464285714285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ORH-Em-9DP">

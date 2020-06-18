@@ -10,6 +10,7 @@
 		0B8E7CFD91804AD37489B384 /* Pods_Swift5_LINEApp_Swift5_LINEAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C989E9ED99E4F91CAAF2D811 /* Pods_Swift5_LINEApp_Swift5_LINEAppUITests.framework */; };
 		53B5E9B7C0A70A2B633414E3 /* Pods_Swift5_LINEApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96214322875BD0FA3B00D75D /* Pods_Swift5_LINEApp.framework */; };
 		6673032D46610CF1641BAF91 /* Pods_Swift5_LINEAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85F5F0D8724D3E94223D0D9F /* Pods_Swift5_LINEAppTests.framework */; };
+		E7178F212495C5CD004DDDE6 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7178F202495C5CD004DDDE6 /* ChatRoom.swift */; };
 		E7370FE02494055C001F1D39 /* UserList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7370FDF2494055C001F1D39 /* UserList.storyboard */; };
 		E7370FE2249406F3001F1D39 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7370FE1249406F3001F1D39 /* UserListViewController.swift */; };
 		E73727E0248BDADF001C4E5D /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73727DF248BDADF001C4E5D /* ChatRoomViewController.swift */; };
@@ -59,6 +60,7 @@
 		C3B4F7135E47EF0DA33F0DC4 /* Pods-Swift5 LINEAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift5 LINEAppTests.debug.xcconfig"; path = "Target Support Files/Pods-Swift5 LINEAppTests/Pods-Swift5 LINEAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C989E9ED99E4F91CAAF2D811 /* Pods_Swift5_LINEApp_Swift5_LINEAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift5_LINEApp_Swift5_LINEAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C263C4748B718E82D4DB12 /* Pods-Swift5 LINEApp-Swift5 LINEAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift5 LINEApp-Swift5 LINEAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Swift5 LINEApp-Swift5 LINEAppUITests/Pods-Swift5 LINEApp-Swift5 LINEAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7178F202495C5CD004DDDE6 /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
 		E7370FDF2494055C001F1D39 /* UserList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserList.storyboard; sourceTree = "<group>"; };
 		E7370FE1249406F3001F1D39 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		E73727DF248BDADF001C4E5D /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +77,7 @@
 		E77B7351248A885800ACD71C /* Swift5 LINEAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift5 LINEAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77B7355248A885800ACD71C /* Swift5_LINEAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift5_LINEAppUITests.swift; sourceTree = "<group>"; };
 		E77B7357248A885800ACD71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E77B7363248A8A3100ACD71C /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		E77B7363248A8A3100ACD71C /* ChatListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatListViewController.swift; path = "Swift5 LINEApp/Controller/ChatListViewController.swift"; sourceTree = SOURCE_ROOT; };
 		E79D3B452493182B002BFAC7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E7AFEE2B24956519001A0FC2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E7BE1989248C167200E0DD10 /* ChatRoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRoomTableViewCell.xib; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				E7AFEE2B24956519001A0FC2 /* User.swift */,
+				E7178F202495C5CD004DDDE6 /* ChatRoom.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -514,6 +517,7 @@
 				E7BE198C248C17F500E0DD10 /* ChatRoomTableViewCell.swift in Sources */,
 				E7AFEE2C24956519001A0FC2 /* User.swift in Sources */,
 				E7E96E44248B3C96001E54AC /* UIColorExtension.swift in Sources */,
+				E7178F212495C5CD004DDDE6 /* ChatRoom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
