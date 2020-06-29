@@ -19,7 +19,7 @@ class ChatListViewController: UIViewController {
     
     //TableViewCellのIdentifire
     let cellId = "cellId"
-    var chatRooms = [ChatRoom]()
+    var chatrooms = [ChatRoom]()
     //ログイン中のユーザー名を表示
     var user: User? {
         didSet {
@@ -69,11 +69,12 @@ class ChatListViewController: UIViewController {
     
     func handleAddedDocumentChange(documentChange: DocumentChange) {
         let dic = documentChange.document.data()
-        let chatrooms = ChatRoom(dic: dic)
+        let chatroom = ChatRoom(dic: dic)
+        chatroom.documentId = documentChange.document.documentID
         
         //メンバーのuidを調べ、自分のuidではない時、情報を取得する
         guard let uid = Auth.auth().currentUser?.uid else { return }
-        chatrooms.memebers.forEach { (memberUid) in
+        chatroom.memebers.forEach { (memberUid) in
             if memberUid != uid {
                 Firestore.firestore().collection("users").document(memberUid).getDocument { (snaoshot, err) in
                     if let err = err {
@@ -84,9 +85,9 @@ class ChatListViewController: UIViewController {
                     let user = User(dic: dic)
                     user.uid = documentChange.document.documentID
                     
-                    chatrooms.partnerUser = user
-                    self.chatRooms.append(chatrooms)
-                    print(self.chatRooms.count)
+                    chatroom.partnerUser = user
+                    self.chatrooms.append(chatroom)
+                    print(self.chatrooms.count)
                     self.chatListTableView.reloadData()
                 }
             }
@@ -173,13 +174,13 @@ extension ChatListViewController: UITableViewDelegate, UITableViewDataSource {
     
     // セルの行数を返すメソッド
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return chatRooms.count
+            return chatrooms.count
         }
         
         // セルの内容を返すメソッド
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = chatListTableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! ChatListTableViewCell
-            cell.chatRoom = chatRooms[indexPath.row]
+            cell.chatRoom = chatrooms[indexPath.row]
 
 //            cell.user = users[indexPath.row]
             return cell
@@ -187,8 +188,10 @@ extension ChatListViewController: UITableViewDelegate, UITableViewDataSource {
         
         //タップされた時の処理
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            
-            let chatRoomViewController = storyboard!.instantiateViewController(withIdentifier: "ChatRoomViewController")
+            let storyboard = UIStoryboard.init(name: "ChatRoom", bundle: nil)
+            let chatRoomViewController = storyboard.instantiateViewController(withIdentifier: "ChatRoomViewController") as! ChatRoomViewController
+            chatRoomViewController.user = user
+            chatRoomViewController.chatroom = chatrooms[indexPath.row]
             navigationController?.pushViewController(chatRoomViewController, animated: true)
         }
         
